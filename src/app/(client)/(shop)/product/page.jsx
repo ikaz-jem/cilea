@@ -29,7 +29,7 @@ import ProdyctReviews from './components/Productreviews/ProductReview'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import ModalPhotos from '../../../shared/ModalPhotos/ModalPhotos'
 
-const ProductDetailPage = ({ className = "" }) => {
+const ProductDetailPage = () => {
   const { sizes, variants, status, allOfSizes } = PRODUCTS[0];
   const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
 
