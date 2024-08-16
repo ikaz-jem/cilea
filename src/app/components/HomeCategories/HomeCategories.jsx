@@ -6,7 +6,7 @@ import Image from "next/image"
 
 async function getData() {
     const res = await fetch('http://localhost:3000/api/categories',
-        { next: { revalidate: 1 } })
+        {cache:"no-store"})
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
     if (!res.ok) {
@@ -20,13 +20,9 @@ async function getData() {
 const HomeCategories = async () => {
 
 
-
-
     const categories = await getData()
 
 
-
-console.log(categories)
     return (
         <>
 
