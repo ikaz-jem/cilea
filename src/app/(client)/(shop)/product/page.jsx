@@ -51,20 +51,20 @@ const ProductDetailPage = ({ className = "" }) => {
 
   const handleCloseModal = () => setIsOpen(false);
 
-  const notifyAddTocart = () => {
-    toast.custom(
-      (t) => (
-        <NotifyAddTocart
-          productImage={LIST_IMAGES_DEMO[0]}
-          qualitySelected={qualitySelected}
-          show={t.visible}
-          sizeSelected={sizeSelected}
-          variantActive={variantActive}
-        />
-      ),
-      { position: "top-right", id: "nc-product-notify", duration: 3000 }
-    );
-  };
+  // const notifyAddTocart = () => {
+  //   toast.custom(
+  //     (t) => (
+  //       <NotifyAddTocart
+  //         productImage={LIST_IMAGES_DEMO[0]}
+  //         qualitySelected={qualitySelected}
+  //         show={t.visible}
+  //         sizeSelected={sizeSelected}
+  //         variantActive={variantActive}
+  //       />
+  //     ),
+  //     { position: "top-right", id: "nc-product-notify", duration: 3000 }
+  //   );
+  // };
 
   const renderVariants = () => {
     if (!variants || !variants.length) {
@@ -259,7 +259,7 @@ const ProductDetailPage = ({ className = "" }) => {
           </div>
           <ButtonPrimary
             className="flex-1 flex-shrink-0"
-            onClick={notifyAddTocart}
+            // onClick={notifyAddTocart}
           >
             <BagIcon className="hidden sm:inline-block w-5 h-5 mb-0.5" />
             <span className="ml-3">Add to cart</span>
