@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/app/components/SiteHeader/Header/DropdownCategories.jsx", "src/app/shared/NextPrev/Next.jsx", "src/app/shared/NextPrev/NextPrev.jsx", "src/app/shared/NextPrev/Prev.jsx", "src/app/shared/ButtonClose/ButtonClose.jsx", "src/app/utils/isInViewPortIntersectionObserver.js", "src/app/shared/NcImage/NcImage.jsx", "src/app/shared/NcImage/PlaceIcon.jsx", "src/app/components/sliders/SectionSliderCategories/SectionSliderCategories.jsx", "src/app/components/CardCategories/CardCategory2.jsx", "src/app/components/CardCategories/ProductCard/LikeButton.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
