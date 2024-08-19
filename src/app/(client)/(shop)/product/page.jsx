@@ -286,7 +286,7 @@ const ProductDetailPage = () => {
   
 
   return (
-    <div className={`nc-ProductDetailPage   ${className}`}>
+    <div className={`nc-ProductDetailPage   `}>
       {/* MAIn */}
       <main className="container mt-5 lg:mt-11 mx-auto">
         <div className="lg:flex">
