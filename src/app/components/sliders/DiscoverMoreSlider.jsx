@@ -89,7 +89,7 @@ const DiscoverMoreSlider = () => {
     <div className={`nc-DiscoverMoreSlider  ${UNIQUE_CLASS} `}>
       <Heading
         desc=""
-        rightDescText="Good things are waiting for you"
+        rightdesctext="Good things are waiting for you"
         hasNextPrev
       >
         Discover more

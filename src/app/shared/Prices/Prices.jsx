@@ -10,12 +10,12 @@ const abril = Alegreya({
 
 
 const Prices = ({
-  className = "",
+  className ,
   price = 33,
   contentClass = " text-sm font-medium",
 }) => {
   return (
-    <div className={`${className}`}>
+    <div className={`${className || ''}`}>
       <div
         className={`flex gap-1 items-center   ${contentClass}`}
       >

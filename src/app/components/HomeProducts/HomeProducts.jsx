@@ -28,7 +28,6 @@ return (
         products.map((product, idx) => {
             
             return (
-                
                 <ProductCard  product={product} key={idx} />
                 
             )

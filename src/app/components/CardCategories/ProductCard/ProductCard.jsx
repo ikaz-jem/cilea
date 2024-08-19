@@ -19,7 +19,7 @@ import Image from "next/image";
 
 
 const ProductCard = ({
-  className = "",
+ 
   data = PRODUCTS[0],
   isLiked,
   product
@@ -218,32 +218,32 @@ const ProductCard = ({
     );
   };
 
-  const renderSizeList = () => {
-    if (!sizes || !sizes.length) {
-      return null;
-    }
+  // const renderSizeList = () => {
+  //   if (!sizes || !sizes.length) {
+  //     return null;
+  //   }
 
-    return (
-      <div className="absolute  bottom-0 inset-x-1 space-x-1.5 flex justify-center opacity-0 invisible group-hover:bottom-4 group-hover:opacity-100 group-hover:visible transition-all">
-        {sizes.map((size, index) => {
-          return (
-            <div
-              key={index}
-              className="nc-shadow-lg w-10 h-10 rounded bg-white hover:bg-slate-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center uppercase font-semibold tracking-tight text-sm text-slate-900"
-              onClick={() => notifyAddTocart({ size })}
-            >
-              {size}
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="absolute  bottom-0 inset-x-1 space-x-1.5 flex justify-center opacity-0 invisible group-hover:bottom-4 group-hover:opacity-100 group-hover:visible transition-all">
+  //       {sizes.map((size, index) => {
+  //         return (
+  //           <div
+  //             key={index}
+  //             className="nc-shadow-lg w-10 h-10 rounded bg-white hover:bg-slate-900 hover:text-white transition-colors cursor-pointer flex items-center justify-center uppercase font-semibold tracking-tight text-sm text-slate-900"
+  //             onClick={() => notifyAddTocart({ size })}
+  //           >
+  //             {size}
+  //           </div>
+  //         );
+  //       })}
+  //     </div>
+  //   );
+  // };
 
   return (
     <>
       <div
-        className={` relative flex flex-col bg-transparent hover:shadow-lg  overflow-hidden transition-all rounded${className}`}
+        className={` relative flex flex-col bg-transparent hover:shadow-lg  overflow-hidden transition-all rounded`}
         data-nc-id=""
       >
 
@@ -275,7 +275,7 @@ const ProductCard = ({
           <ProductStatus status={status} />
           <div className="group-hover:flex hidden">
 
-            <LikeButton liked={isLiked} className=" absolute top-3 right-3 z-10" />
+            {/* <LikeButton liked={isLiked}  /> */}
           </div>
 
           {/* {sizes ? renderSizeList() : renderGroupButtons()} */}

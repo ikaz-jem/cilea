@@ -11,16 +11,16 @@ import Image from "next/image";
 
 
 const NcImage= ({
-  containerClassName = "",
+  containerClassName ,
   alt = "nc-imgs",
-  src = "",
+  src,
   className = "object-cover w-full h-full",
   ...args
 }) => {
   const _containerRef = useRef(null);
   let _imageEl = null;
 
-  const [__src, set__src] = useState(src);
+  const [__src, set__src] = useState(src || '');
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const _checkInViewPort = () => {
